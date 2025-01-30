@@ -1,15 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
-    <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="stylesheet" href="scss/styles.scss">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body data-bs-theme="light">
+  <div class="container py-4 px-3 mx-auto">
+    <h1>Hello, Bootstrap and Vite!</h1>
+    <button class="btn btn-primary">Primary button</button>
+    <button id="darkModeToggle" class="btn btn-secondary">Toggle Dark Mode</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-danger">Danger</button>
+    <div class="card">
+      <div class="card-body">
+        This is a card.
+      </div>
     </div>
-  </body>
+    <div class="alert alert-warning" role="alert">
+      This is a warning alert.
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Open Modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            This is a Bootstrap modal.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
